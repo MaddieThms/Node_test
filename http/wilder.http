@@ -1,0 +1,26 @@
+
+POST http://localhost:3000/api/wilderwithskills
+Content-Type: application/json
+
+{"wilderName": "jane", "skillName": "Java"}
+
+###
+POST http://localhost:3000/api/wilder
+Content-Type: application/json
+
+{"name": "jane doe"}
+
+###
+
+GET http://localhost:3000/api/wilder
+
+###
+
+PUT http://localhost:3000/api/wilder/2
+Content-Type: application/json
+
+{"name":"john doe"}
+
+###
+
+DELETE http://localhost:3000/api/wilder/2
