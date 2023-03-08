@@ -2,7 +2,7 @@ const dataSource = require("../utils").dataSource;
 const Skill = require("../entity/Skill");
 
 module.exports={
-    read : async (req,res) => {
+read : async (req,res) => {
         try{ const skills= await dataSource.getRepository(Skill).find();
             res.send(skills)
        }catch(error){

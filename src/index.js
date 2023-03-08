@@ -8,6 +8,18 @@ const app = express();
 app.use(express.json())
 
 
+
+app.use((req, res, next) => {
+  const requestNb = Math.floor(Math.random()*3)+1
+  if (requestNb < 3) {
+    res.status(418).send("I'm a Teapot");
+    console.log(`${req.ip} ${req.method} ${req.url}`);
+    return;
+  }
+  next();
+})
+
+
 app.get("/api/wilder", WilderController.read);
 app.post("/api/wilder", WilderController.create);
 app.put("/api/wilder/:id", WilderController.edit);

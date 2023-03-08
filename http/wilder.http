@@ -8,7 +8,7 @@ Content-Type: application/json
 POST http://localhost:3000/api/wilder
 Content-Type: application/json
 
-{"name": "jane doe"}
+{"name": "jane doe", "email":"jane-doe@email.com"}
 
 ###
 
@@ -16,10 +16,10 @@ GET http://localhost:3000/api/wilder
 
 ###
 
-PUT http://localhost:3000/api/wilder/2
+PUT http://localhost:3000/api/wilder/1
 Content-Type: application/json
 
-{"name":"john doe"}
+{"name":"jane doe"}
 
 ###
 
