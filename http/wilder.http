@@ -1,26 +1,26 @@
 
-POST http://localhost:3000/api/wilderwithskills
+POST http://localhost:5000/api/wilderwithskills
 Content-Type: application/json
 
-{"wilderName": "jane", "skillName": "Java"}
+{"wilderName": "jane doe", "skillName": "PHP"}
 
 ###
-POST http://localhost:3000/api/wilder
+POST http://localhost:5000/api/wilder
 Content-Type: application/json
 
-{"name": "jane doe", "email":"jane-doe@email.com"}
+{"name": "jane doe", "city":"Lyon", "email":"jane@email.fr"}
 
 ###
 
-GET http://localhost:3000/api/wilder
+GET http://localhost:5000/api/wilder
 
 ###
 
-PUT http://localhost:3000/api/wilder/1
+PUT http://localhost:5000/api/wilder/1
 Content-Type: application/json
 
 {"name":"jane doe"}
 
 ###
 
-DELETE http://localhost:3000/api/wilder/2
+DELETE http://localhost:5000/api/wilder/2

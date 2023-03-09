@@ -1,4 +1,4 @@
-const { Unique } = require("typeorm");
+
 
 const EntitySchema = require("typeorm").EntitySchema;
 
@@ -13,16 +13,12 @@ module.exports = new EntitySchema({
         name: {
             type: "text",
         },
+        city: {
+            type: "text",
+        },
         email: {
             type: "text",
             unique: true
         }
     },
-    relations:{
-        skills:{
-            target: "Skill",
-            type:"many-to-many",
-            joinTable: true,
-            eager: true,
-    }},
 });
